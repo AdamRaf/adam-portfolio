@@ -15,9 +15,39 @@ export default function Navbar() {
           {/* Navigation Links (Desktop) */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a href="#about" className="text-gray-300 hover:text-blue-400 transition-colors">About</a>
-              <a href="#skills" className="text-gray-300 hover:text-blue-400 transition-colors">Skills</a>
-              <a href="#projects" className="text-gray-300 hover:text-blue-400 transition-colors">Projects</a>
+              <a
+                href="#about"
+                className="
+                  text-gray-300
+                  transition-all duration-300
+                  hover:text-purple-200
+                  hover:[text-shadow:0_0_2px_rgba(255,255,255,0.8),0_0_8px_rgba(168,85,247,1),0_0_16px_rgba(168,85,247,1)]
+                "
+              >
+                About
+              </a>
+              <a 
+                href="#skills" 
+                className="
+                  text-gray-300
+                  transition-all duration-300
+                  hover:text-purple-200
+                  hover:[text-shadow:0_0_2px_rgba(255,255,255,0.8),0_0_8px_rgba(168,85,247,1),0_0_16px_rgba(168,85,247,1)]
+                "
+              >
+                Skills
+              </a>
+              <a 
+                href="#projects" 
+                className="
+                  text-gray-300
+                  transition-all duration-300
+                  hover:text-purple-200
+                  hover:[text-shadow:0_0_2px_rgba(255,255,255,0.8),0_0_8px_rgba(168,85,247,1),0_0_16px_rgba(168,85,247,1)]
+                "
+              >
+                Projects
+              </a>
             </div>
           </div>
           
