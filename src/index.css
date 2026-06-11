@@ -20,11 +20,15 @@ body {
 /* Neumorphism & Glassmorphism Utilities */
 @layer utilities {
   .neu-extruded {
-    box-shadow: 6px 6px 16px #090a0e, -6px -6px 16px #1d202e;
+    box-shadow: 6px 6px 16px #000000, -6px -6px 16px #272b3d;
+  }
+
+  .neu-extruded:active {
+    box-shadow: inset 4px 4px 8px #000000, inset -4px -4px 8px #272b3d;
   }
   
   .neu-sunken {
-    box-shadow: inset 4px 4px 8px #090a0e, inset -4px -4px 8px #1d202e;
+    box-shadow: inset 4px 4px 8px #000000, inset -4px -4px 8px #272b3d;
   }
 
   .glass-panel {
