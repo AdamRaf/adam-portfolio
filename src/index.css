@@ -26,6 +26,11 @@ body {
   .neu-extruded:active {
     box-shadow: inset 4px 4px 8px #000000, inset -4px -4px 8px #272b3d;
   }
+
+  .neu-extruded-sm {
+    background: #1e1f26;
+    box-shadow: 4px 4px 8px #000000, -4px -4px 8px #272b3d;
+  }
   
   .neu-sunken {
     box-shadow: inset 4px 4px 8px #000000, inset -4px -4px 8px #272b3d;
@@ -37,4 +42,14 @@ body {
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(124, 58, 237, 0.2);
   }
+}
+@utility cyber-glow {
+  box-shadow: 0 0 25px rgba(124, 58, 237, 0.7);
+}
+@utility cyber-text-glow {
+  filter:
+    brightness(1.25)
+    drop-shadow(0 0 2px rgba(173,198,255,1))
+    drop-shadow(0 0 6px rgba(173,198,255,.9))
+    drop-shadow(0 0 12px rgba(173,198,255,.7));
 }
