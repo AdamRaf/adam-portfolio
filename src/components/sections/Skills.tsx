@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { skillsData } from "../../data/Skills";
+import { skillsData } from "../../data/skills";
 
 const containerVariants = {
     hidden: {opacity: 0},
@@ -45,16 +45,16 @@ export default function Skills() {
                     const Icon = skill.icon;
                     return (
                         <motion.div 
-                            key={skill.id}
+                            key={skill.name}
                             variants={cardVariants}
-                            className="neu-extruded-sm rounded-lg p-4 flex flex-col items-center justify-center gap-2 hover:cyber-glow transition-all duration-300 cursor-pointer group"
+                            className="neu-extruded-sm rounded-lg p-4 flex flex-col items-center justify-center gap-2 hover:cyber-glow active:cyber-glow cursor-pointer group"
                         >
-                            <div className="text-3xl group-hover:#F3F4F6 group-hover:cyber-text-glow transition-colors">
-                                <Icon className="w-6 h-6" />
+                            <div className="text-3xl text-text-secondary group-hover:text-[#adc6ff] group-hover:cyber-text-glow group-active:text-[#adc6ff] group-active:cyber-text-glow transition-colors">
+                                <Icon className={`w-6 h-6 ${skill.iconStyle}`} />
                             </div>
                             
                             <div>
-                                <h3 className="font-label-md text-label-md transition-colors">
+                                <h3 className="font-label-md text-label-md text-text-secondary group-hover:text-text-primary group-active:text-text-primary transition-colors">
                                     {skill.name}
                                 </h3>
                             </div>

@@ -48,8 +48,6 @@ body {
 }
 @utility cyber-text-glow {
   filter:
-    brightness(1.25)
-    drop-shadow(0 0 2px rgba(173,198,255,1))
     drop-shadow(0 0 6px rgba(173,198,255,.9))
     drop-shadow(0 0 12px rgba(173,198,255,.7));
 }
