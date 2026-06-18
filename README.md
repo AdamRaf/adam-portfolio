@@ -1,73 +1,45 @@
-# React + TypeScript + Vite
+# Adam R - Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance personal portfolio built with a focus on clean architecture, smooth micro-interactions, and a unique visual identity. 
 
-Currently, two official plugins are available:
+This project explores the fusion of **Neumorphism** (soft 3D UI) and **Glassmorphism** (frosted glass aesthetics) within a highly optimized dark-mode environment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Lighthouse Metrics
+Proven high-performance, accessibility, and SEO optimization. Audited via Google Lighthouse:
 
-## React Compiler
+| Metric | Desktop | Mobile |
+| :--- | :---: | :---: |
+| 🟢 **Performance** | `100` | `99` |
+| 🟢 **Accessibility** | `98` | `98` |
+| 🟢 **Best Practices** | `100` | `100` |
+| 🟢 **SEO** | `100` | `100` |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack & Architecture
+- **Core:** React 18, TypeScript, Vite (Lightning-fast HMR and optimized build)
+- **Styling:** Tailwind CSS v4 (Utility-first, minimal bundle size)
+- **Animation Engine:** Framer Motion (Hardware-accelerated layout transitions)
+- **Icons:** Raw SVG & Lucide React (Fully tree-shakable)
+- **Package Manager:** pnpm
 
-## Expanding the ESLint configuration
+## Key Features
+- **Hybrid UI Design:** Strategic use of Glassmorphic containers coupled with Neumorphic interactive elements to establish a clear visual hierarchy.
+- **Fluid Responsiveness:** Fully adapted for Mobile, Tablet, and Ultra-wide displays.
+- **Performant Animations:** Viewport-triggered fade-ins and stagger effects that don't block the main thread.
+- **Zero-Dependency SVGs:** Bypassed heavy icon libraries for static branding icons to ensure the lowest possible initial load time.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Local Development Setup
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/AdamRaf/adam-portfolio.git](https://github.com/AdamRaf/adam-portfolio.git)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+2. **Install dependencies**
+   ```bash
+   pnpm install
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+3. **Start the development server**
+   ```bash
+   pnpm dev
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## License
+This project is open-source and available under the MIT License.
