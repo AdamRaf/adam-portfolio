@@ -23,30 +23,27 @@ body {
 }
 
 /* Neumorphism & Glassmorphism Utilities */
-@layer utilities {
-  .neu-extruded {
-    box-shadow: 6px 6px 16px #000000, -6px -6px 16px #272b3d;
-  }
+@utility neu-extruded {
+  box-shadow: 6px 6px 16px #000000, -6px -6px 16px #272b3d;
 
-  .neu-extruded:active {
+  &:active {
     box-shadow: inset 4px 4px 8px #000000, inset -4px -4px 8px #272b3d;
   }
+}
 
-  .neu-extruded-sm {
-    background: #1e1f26;
-    box-shadow: 4px 4px 8px #000000, -4px -4px 8px #272b3d;
-  }
-  
-  .neu-sunken {
-    box-shadow: inset 4px 4px 8px #000000, inset -4px -4px 8px #272b3d;
-  }
+@utility neu-extruded-sm {
+  background: #1e1f26;
+  box-shadow: 4px 4px 8px #000000, -4px -4px 8px #272b3d;
+}
 
-  .glass-panel {
-    background-color: rgba(22, 24, 36, 0.6);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(124, 58, 237, 0.2);
-  }
+@utility neu-sunken {
+  box-shadow: inset 4px 4px 8px #000000, inset -4px -4px 8px #272b3d;
+}
+
+@utility glass-panel {
+  background-color: rgba(22, 24, 36, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(124, 58, 237, 0.2);
 }
 @utility cyber-glow {
   box-shadow: 0 0 25px rgba(124, 58, 237, 0.7);
