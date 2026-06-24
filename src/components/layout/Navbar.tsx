@@ -8,14 +8,15 @@ export default function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const handleMobileNavigation = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
-    debugger
     e.preventDefault();
     setIsMenuOpen(false);
 
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth'})
-    }
+    setTimeout(() => {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth'})
+      }
+    }, 0)
   }
 
   const navLinkClass = `
@@ -64,7 +65,7 @@ export default function Navbar() {
               <motion.div
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
-                // exit={{ opacity: 0, height: 0 }}
+                exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.3, ease: 'easeInOut' }}
                 className="absolute top-16 left-0 md:hidden w-full bg-surface/95 backdrop-blur-[16px] border-b border-accent-purple/20 overflow-hidden"
               >
