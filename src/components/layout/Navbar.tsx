@@ -26,6 +26,14 @@ export default function Navbar() {
     hover:[text-shadow:0_0_2px_rgba(255,255,255,0.8),0_0_8px_rgba(168,85,247,1),0_0_16px_rgba(168,85,247,1)]
   `;
 
+  const navMenuLinkClass = `
+    ${navLinkClass}
+    self-stretch
+    text-center
+    active:text-purple-200
+    active:[text-shadow:0_0_2px_rgba(255,255,255,0.8),0_0_8px_rgba(168,85,247,1),0_0_16px_rgba(168,85,247,1)]
+  `;
+
   return (
     <nav className="fixed top-0 w-full z-50 glass-panel border-b border-white/5">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,21 +81,21 @@ export default function Navbar() {
                   <a
                     href="#about"
                     onClick={(e) => handleMobileNavigation(e, 'about')}
-                    className={navLinkClass}
+                    className={navMenuLinkClass}
                   >
                     About
                   </a>
                   <a
                     href="#skills"
                     onClick={(e) => handleMobileNavigation(e, 'skills')}
-                    className={navLinkClass}
+                    className={navMenuLinkClass}
                   >
                     Skills
                   </a>
                   <a
                     href="#projects"
                     onClick={(e) => handleMobileNavigation(e, 'projects')}
-                    className={navLinkClass}
+                    className={navMenuLinkClass}
                   >
                     Projects
                   </a>
