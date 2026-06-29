@@ -45,16 +45,6 @@ export default function Projects() {
             variants={cardVariants}
             className="glass-panel flex flex-col rounded-2xl overflow-hidden group hover:border-purple-500/50 transition-colors duration-500"
           >
-            {/* Image Container */}
-            <div className="h-48 overflow-hidden relative">
-              <div className="absolute inset-0 bg-blue-900/20 mix-blend-overlay z-10"></div>
-              <img
-                src={project.imageUrl}
-                alt={project.title}
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-              />
-            </div>
-
             {/* Desc Container */}
             <div className="p-6 flex flex-col flex-grow">
               <h3 className="text-xl font-bold text-gray-100 mb-3 group-hover:text-blue-400 transition-colors">
