@@ -51,6 +51,9 @@ export default function Navbar() {
               <a href="#about" className={navLinkClass}>
                 About
               </a>
+              <a href="#experience" className={navLinkClass}>
+                Experience
+              </a>
               <a href="#skills" className={navLinkClass}>
                 Skills
               </a>
@@ -84,6 +87,13 @@ export default function Navbar() {
                     className={navMenuLinkClass}
                   >
                     About
+                  </a>
+                  <a
+                    href="#experience"
+                    onClick={(e) => handleMobileNavigation(e, 'experience')}
+                    className={navMenuLinkClass}
+                  >
+                    Experience
                   </a>
                   <a
                     href="#skills"
