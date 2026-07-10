@@ -26,7 +26,7 @@ export default function Projects() {
         className="mb-12"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-gray-100 tracking-tight">
-          Project Hub.
+          Personal Project Hub.
         </h2>
         <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mt-4 rounded-full"></div>
       </motion.div>
@@ -71,9 +71,11 @@ export default function Projects() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => {if (project.link === "#") e.preventDefault()}}
                 className="mt-auto flex items-center justify-center gap-2 w-full py-3 rounded-lg text-sm font-medium text-gray-200 neu-extruded hover:neu-sunken transition-all duration-300"
               >
-                Launch Project <ExternalLink className="w-4 h-4" />
+                {project.link === "#" ? "Doesn't have a website yet" : "Launch Project"}
+                {project.link !== "#" && <ExternalLink className="w-4 h-4" />}
               </a>
             </div>
           </motion.div>
