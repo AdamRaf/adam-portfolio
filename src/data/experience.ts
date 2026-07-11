@@ -34,11 +34,21 @@ export const experienceData: ProjectExperience[] = [
     ],
   },
   {
-    systemName: "Enterprise Integration & Core Migrations",
-    description: "Facilitated major backend and framework modernization overhauls, bridging frontend clients with massive data layers and modern middleware interfaces.",
+    systemName: "Enterprise Integration & Middleware Architecture",
+    description: "Facilitated major backend and framework modernization overhauls, bridging frontend web clients with massive corporate backend data layers.",
     highlights: [
-      "Integrated frontend web interfaces with robust backend ecosystems and Odoo API infrastructures.",
-      "Migrated legacy enterprise codebases smoothly using Abstract Syntax Tree (AST) automated transformation tooling.",
+      "Integrated responsive frontend web interfaces with complex, robust Odoo API infrastructures.",
+      "Validated complex PostgreSQL database queries and managed state synchronization across heavily distributed enterprise data flows.",
+      "Coordinated with backend teams to establish clean, predictable REST API contracts."
+    ],
+  },
+  {
+    systemName: "Automated Python AST Framework Migrator",
+    description: "Co-developed a custom, programmatic syntax transformation engine using Python AST to automate generational enterprise software upgrades.",
+    highlights: [
+      "One of two core developers responsible for engineering an AST-based syntax compiler to automate the massive architectural leap from legacy Odoo 9 to modern Odoo 17 standards.",
+      "Programmatically transformed thousands of lines of deprecated decorators, model structures, and field syntaxes, eliminating human refactoring errors.",
+      "Successfully executed the automated migration pipeline to safely upgrade and redeploy the company's core operational modules."
     ],
   }
 ];
