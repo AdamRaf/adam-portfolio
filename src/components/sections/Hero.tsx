@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import profilePic from '../../assets/profile.webp';
 
 export default function Hero() {
   return (
@@ -53,11 +54,12 @@ export default function Hero() {
           <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/30 to-purple-600/30 blur-3xl rounded-full w-64 h-64 md:w-80 md:h-80 m-auto"></div>
           
           {/* Avatar / Shape Placeholder with Glassmorphism */}
-          <div className="glass-panel w-64 h-64 md:w-80 md:h-80 rounded-full relative z-10 flex items-center justify-center overflow-hidden border border-purple-500/30">
-             {/* Temp span before putting the real pict */}
-             <span className="text-gray-500 text-sm tracking-widest uppercase text-center px-4">
-               Picture me as a void creature
-             </span>
+          <div className="glass-panel w-64 h-64 md:w-80 md:h-80 rounded-full relative z-10 flex items-center justify-center overflow-hidden border border-purple-500/30 group">
+             <img
+              src={profilePic}
+              alt="Profile Picture"
+              className="w-full h-full object-cover object-center transition-transform duration-400 group-hover:scale-105"
+             />
           </div>
         </motion.div>
 
