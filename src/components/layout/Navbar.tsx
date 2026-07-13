@@ -51,11 +51,11 @@ export default function Navbar() {
               <a href="#about" className={navLinkClass}>
                 About
               </a>
-              <a href="#experience" className={navLinkClass}>
-                Experience
-              </a>
               <a href="#skills" className={navLinkClass}>
                 Skills
+              </a>
+              <a href="#experience" className={navLinkClass}>
+                Experience
               </a>
               <a href="#projects" className={navLinkClass}>
                 Projects
@@ -89,18 +89,18 @@ export default function Navbar() {
                     About
                   </a>
                   <a
-                    href="#experience"
-                    onClick={(e) => handleMobileNavigation(e, 'experience')}
-                    className={navMenuLinkClass}
-                  >
-                    Experience
-                  </a>
-                  <a
                     href="#skills"
                     onClick={(e) => handleMobileNavigation(e, 'skills')}
                     className={navMenuLinkClass}
                   >
                     Skills
+                  </a>
+                  <a
+                    href="#experience"
+                    onClick={(e) => handleMobileNavigation(e, 'experience')}
+                    className={navMenuLinkClass}
+                  >
+                    Experience
                   </a>
                   <a
                     href="#projects"
