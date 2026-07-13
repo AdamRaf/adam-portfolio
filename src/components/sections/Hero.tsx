@@ -35,10 +35,10 @@ export default function Hero() {
 
           {/* Neumorphism Button */}
           <a 
-            href="#projects" 
+            href="#experience" 
             className="mt-4 flex items-center gap-2 px-8 py-4 rounded-xl text-gray-200 font-medium neu-extruded transition-all duration-300 group"
           >
-            View My Projects
+            View My Experience
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 group-hover:text-purple-500 transition-transform" />
           </a>
         </motion.div>
