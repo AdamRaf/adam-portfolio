@@ -50,5 +50,14 @@ export const experienceData: ProjectExperience[] = [
       "Programmatically transformed thousands of lines of deprecated decorators, model structures, and field syntaxes, eliminating human refactoring errors.",
       "Successfully executed the automated migration pipeline to safely upgrade and redeploy the company's core operational modules."
     ],
+  },
+  {
+    systemName: "Cross-Company Real-Time Messaging & SSO",
+    description: "Engineered the real-time messaging and authentication architecture for a unified enterprise application ecosystem, designed to handle cross-company communications across supply chain networks (SPBU, tank truck drivers, fuel depots, etc.).",
+    highlights: [
+      "Developed a secure real-time WebSocket pipeline utilizing a Single-Pipe Subscription topology with Centrifugo, isolating message streaming directly to personal client channels.",
+      "Built out plugin-driven Python Backend-for-Frontend (BFF) endpoints to safely validate, record, and route event payloads using asynchronous PostgreSQL operations.",
+      "Integrated centralized identity management by implementing Authentik SSO code-authentication workflows to handle secure multi-tenant user registration and access control redirects."
+    ]
   }
 ];
